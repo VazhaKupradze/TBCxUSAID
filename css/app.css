@@ -190,6 +190,8 @@ header {
   color: white;
 }
 
+/*slider section*/
+
 .partner-sect {
   background-color: #2d2d30;
   display: flex;
@@ -209,4 +211,75 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+/*question section*/
+
+.question-sect {
+  background-color: #1e1f21;
+  display: flex;
+  justify-content: center;
+}
+
+.questionSect {
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.questionSectHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 70px 0 30px 0;
+}
+
+.questionSectHeader h2 {
+  font-size: 24px;
+  color: #dbdbdb;
+}
+
+.questionSectHeader a {
+  font-size: 20px;
+  color: rgb(0, 163, 224);
+  letter-spacing: normal;
+  transition: 0.5s;
+}
+
+.questionSectHeader a:hover {
+  color: white;
+}
+
+.accBox {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.accHeader {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accHeader h3 {
+  font-size: 22px;
+  color: #dbdbdb;
+}
+
+.fa-chevron-down {
+  color: #dbdbdb;
+}
+
+.accContent p {
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: normal;
+  line-height: 2;
+}
+
+.accContent.accActive p {
+  display: none;
 }
