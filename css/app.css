@@ -129,6 +129,7 @@ header {
 .learningSec {
   max-width: 980px;
   width: 100%;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -267,19 +268,46 @@ header {
 .accHeader h3 {
   font-size: 22px;
   color: #dbdbdb;
+  cursor: pointer;
 }
-
-.fa-chevron-down {
+.accHeader::after {
+  cursor: pointer;
+  content: "\22C1";
+  font-size: 0.7rem;
   color: #dbdbdb;
 }
 
-.accContent p {
-  color: white;
-  font-size: 1.1em;
-  letter-spacing: normal;
-  line-height: 2;
+.accHeader.active::after {
+  content: "\22C0";
+  color: #dbdbdb;
 }
 
-.accContent.accActive p {
-  display: none;
+.accContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accContent p {
+  padding: 1rem;
+  line-height: 2;
+  letter-spacing: normal;
+  color: #dbdbdb;
+}
+
+/* Footer */
+
+.footer-sect {
+  background-color: #2d2d30;
+  display: flex;
+  justify-content: center;
+}
+
+.footerSect {
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 0 50px 0;
 }

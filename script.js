@@ -1,6 +1,15 @@
-let accordion = document.getElementById("headerAcc");
-let content = document.getElementById("content");
+//accordion 
 
-accordion.addEventListener("click", function () {
-  content.classList.toggle("accActive");
+const accHeaders = document.querySelectorAll(".accHeader");
+
+accHeaders.forEach((headerAcc) => {
+  headerAcc.addEventListener("click", (event) => {
+    headerAcc.classList.toggle("active");
+    const contentAcc = headerAcc.nextElementSibling;
+    if (headerAcc.classList.contains("active")) {
+      contentAcc.style.maxHeight = contentAcc.scrollHeight + "px";
+    } else {
+      contentAcc.style.maxHeight = 0;
+    }
+  });
 });
