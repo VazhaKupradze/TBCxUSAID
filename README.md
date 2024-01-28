@@ -11,9 +11,12 @@
 project-root/
 │
 ├── css/
+│   ├── owl
 │   ├── app.css
 │   ├── reset.css
 │   ├── responsive.css
+├── images//
+├── owl.carousel.min.js
 ├── index.html
 ├── package.json
 ├── script.js
@@ -24,9 +27,9 @@ project-root/
 ```
 
 ## Technologies:
-  - Html - 
-  - Css - 
-  - Js - 
+  - Html - structure a web page and its content.
+  - Css - to style and layout web pages
+  - Js - to make web pages interactive
 
 ## 🚀 Usage
   - start project 
