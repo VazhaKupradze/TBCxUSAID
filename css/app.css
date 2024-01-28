@@ -147,6 +147,19 @@ header {
   row-gap: 25px;
   column-gap: 37px;
 }
+@media (min-width: 320px) {
+  .learningSecCont { grid-template-columns: repeat(1, 1fr); }
+}
+
+
+@media (min-width: 660px) {
+  .learningSecCont { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 900px? 3 columns */
+@media (min-width: 1000px) {
+  .learningSecCont { grid-template-columns: repeat(3, 1fr); }
+}
 
 .contBox {
   width: 300px;
@@ -207,11 +220,39 @@ header {
   justify-content: space-between;
 }
 
+.partnerHeader{
+font-size: 30px;
+color: #dbdbdb;
+margin: 100px 0;
+}
 .carousel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.owl-carousel .owl-nav button.owl-next
+{
+  position: relative;
+  left: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-prev
+{
+  position: relative;
+  right: 50%;
+}
+
+.owl-carousel button.owl-dot
+{
+  font-size: 0.5em;
+}
+
+.partnerBox img{
+  max-width: 250px;
+  width: 100%;
 }
 
 /*question section*/
@@ -310,4 +351,62 @@ header {
   flex-direction: column;
   justify-content: space-between;
   margin: 50px 0 50px 0;
+}
+
+.footerHead{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .socialFooter i{
+  width: 25px;
+  height: 25px;
+} */
+
+.fa-brands {
+  font-size: 25px;
+  cursor: pointer;
+  padding-left: 15px;
+  color: #dbdbdb;
+}
+
+.footerMiddle {
+  padding-top: 25px;
+  color: #dbdbdb;
+}
+.footerMiddle h4 span {
+  cursor: pointer;
+}
+
+.footerFoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.footerFootHead h3{
+color: #dbdbdb;
+cursor: pointer;
+transition: 0.4s;
+}
+.footerFootHead h3:hover {
+  color: grey;
+}
+.footerFoot button {
+  background-color: rgb(0, 163, 224);
+  border: none;
+  width: 162px;
+  height: 39px;
+  color: #dbdbdb;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+
+.footerFoot button:hover{
+  background-color: silver;
+  color: black;
 }
